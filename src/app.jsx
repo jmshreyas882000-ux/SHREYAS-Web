@@ -55,3 +55,42 @@ export default function App() {
     </>
   );
 }
+export default function App() {
+  return (
+    <>
+      <Scene />
+
+      <div className="absolute top-0 left-0 w-full p-6 flex justify-between">
+        <h1 className="text-xl font-bold text-cyan-400">AI SYSTEM</h1>
+        <p className="text-green-400">● ACTIVE</p>
+      </div>
+
+      <div className="grid grid-cols-3 gap-6 p-10 mt-20">
+
+        {/* LEFT PANEL */}
+        <div className="glass p-6">
+          <h2>AI Controls</h2>
+          <button className="btn">Run Analysis</button>
+          <button className="btn">Predict Stock</button>
+        </div>
+
+        {/* CENTER (EMPTY FOR ROBOT) */}
+        <div></div>
+
+        {/* RIGHT PANEL */}
+        <div className="glass p-6">
+          <h2>System Info</h2>
+          <p>Model: FinTech AI v1</p>
+          <p>Status: Running</p>
+        </div>
+
+      </div>
+
+      {/* BOTTOM PANEL */}
+      <div className="glass m-10 p-6">
+        <h2>AI Output</h2>
+        <p>Waiting for input...</p>
+      </div>
+    </>
+  );
+}
