@@ -18,3 +18,13 @@ body {
 section {
   backdrop-filter: blur(10px);
 }
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #050505, #000);
+  color: white;
+}
+
+/* neon glow effect */
+canvas {
+  filter: drop-shadow(0 0 20px cyan);
+}
