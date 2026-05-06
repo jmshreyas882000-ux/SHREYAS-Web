@@ -74,3 +74,9 @@ export default function Scene() {
     </Canvas>
   );
 }
+<Canvas camera={{ position: [0, 0, 15] }} style={{
+  position: "fixed",
+  top: 0,
+  left: 0,
+  zIndex: -1
+}}>
