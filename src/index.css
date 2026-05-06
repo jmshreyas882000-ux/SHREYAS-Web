@@ -28,3 +28,35 @@ body {
 canvas {
   filter: drop-shadow(0 0 20px cyan);
 }
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #020024, #000);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0,255,255,0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+/* BUTTONS */
+.btn {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid cyan;
+  color: cyan;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: cyan;
+  color: black;
+}
