@@ -1,26 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreyas JM | AI & FinTech Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- 3D Background -->
+<canvas id="bg"></canvas>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Shreyas JM</h1>
+  <p>AI & FinTech Engineer</p>
+  <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    Passionate Computer Science Engineer specializing in AI, Finance, and Web Development.
+    I build intelligent systems for financial analysis and decision-making.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skill-box">
+    <div>Python</div>
+    <div>AI/ML</div>
+    <div>Finance</div>
+    <div>Web Dev</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>AI Financial Analyst</h3>
+    <p>Predicts stock trends using machine learning models.</p>
+  </div>
+
+  <div class="card">
+    <h3>Stock Market Predictor</h3>
+    <p>Analyzes historical data and forecasts prices.</p>
+  </div>
+
+  <div class="card">
+    <h3>Portfolio Website</h3>
+    <p>Interactive 3D personal resume.</p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Email: jmshreyas882000@gmail.com</p>
+</section>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>
-const scene = new THREE.Scene();
+<script src="script.js"></script>
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
-
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
-
-camera.position.z = 5;
-
-function animate() {
-  requestAnimationFrame(animate);
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-  renderer.render(scene, camera);
-}
-animate();
-</script>
+</body>
+</html>
