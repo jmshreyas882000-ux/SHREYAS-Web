@@ -3,6 +3,7 @@ import { OrbitControls, Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
 import { useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
+import Robot from "./Robot";
 
 function Particles() {
   const ref = useRef();
@@ -56,6 +57,18 @@ export default function Scene() {
 
       <Particles />
       <GlowSphere />
+
+      <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.5} />
+    </Canvas>
+  );
+}
+export default function Scene() {
+  return (
+    <Canvas style={{ position: "fixed", zIndex: -1 }}>
+      <ambientLight intensity={0.5} />
+      <pointLight position={[10, 10, 10]} />
+
+      <Robot />
 
       <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.5} />
     </Canvas>
