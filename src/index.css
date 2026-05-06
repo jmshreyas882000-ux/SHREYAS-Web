@@ -7,3 +7,14 @@ body {
   color: white;
   font-family: 'Poppins', sans-serif;
 }
+body {
+  margin: 0;
+  background: radial-gradient(circle at 30% 30%, #0f2027, #000000);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* glass effect */
+section {
+  backdrop-filter: blur(10px);
+}
